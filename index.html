@@ -1,5 +1,10 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <style>
+    .edit{
+     border: 1px solid black; 
+    }
+  </style>
 </head>
 <body onload="enableEditMode()">
   <!-- Esta página utiliza Font Awesome -->
@@ -61,7 +66,7 @@
     <button onclick="execCmd('selectAll');">Select All</button>
   </div>
 
-  <iframe name="richTextField" style="width: 1000px; height: 500ox;"></iframe>
+  <iframe class="edit" name="richTextField" style="width: 1000px; height: 500ox;"></iframe>
 
   <script>
     var showingSourceCode = false;
